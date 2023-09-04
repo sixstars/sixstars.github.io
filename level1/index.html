@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta property="og:type" content="website">
+    <meta name="description" content="*GAME level1              function checkKey() {             var guess_num &#x3D; parseFloat(document.getElementById(&quot;keyInput&quot;).value);             var random_num &#x3D; Math.floor(Math.random() * 100);;">
+<meta property="og:type" content="website">
 <meta property="og:title" content="*GAME 2023">
-<meta property="og:url" content="https://sixstars.github.io/archives/2023/index.html">
+<meta property="og:url" content="https://sixstars.github.io/level1/index.html">
 <meta property="og:site_name" content="*GAME 2023">
+<meta property="og:description" content="*GAME level1              function checkKey() {             var guess_num &#x3D; parseFloat(document.getElementById(&quot;keyInput&quot;).value);             var random_num &#x3D; Math.floor(Math.random() * 100);;">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-09-04T05:54:36.114Z">
+<meta property="article:modified_time" content="2023-09-04T05:54:36.084Z">
 <meta property="article:author" content="sixstars">
 <meta name="twitter:card" content="summary">
     
@@ -74,57 +78,38 @@
 </header>
 
         
-        <div id="archive">
-  <ul class="post-list">
-    
-    
-    
-      
-      
-      
-      
-        <h2>2023</h2>
-      
-      <li class="post-item">
-        
-    <div class="meta">
-        <time datetime="2023-09-04T05:57:49.000Z" itemprop="datePublished">2023-09-04</time>
-    </div>
-
-
-        <span>
-    
-        <a class="" href="/2023/09/04/Level2/">Level2</a>
-    
-
-
-<span>
-      </li>
-    
-      
-      
-      
-      
-      <li class="post-item">
-        
-    <div class="meta">
-        <time datetime="2023-09-03T06:49:29.000Z" itemprop="datePublished">2023-09-03</time>
-    </div>
-
-
-        <span>
-    
-        <a class="" href="/2023/09/03/Level1/">Level1</a>
-    
-
-
-<span>
-      </li>
-    
-  </ul>
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  
   
 
-</div>
+  <div class="content" itemprop="articleBody">
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>*GAME level1</title>
+    <script>
+        function checkKey() {
+            var guess_num = parseFloat(document.getElementById("keyInput").value);
+            var random_num = Math.floor(Math.random() * 100);;
+
+            if (guess_num === random_num) {
+                alert("我去，你真是太厉害了！下一关的Flag是\n*GAME{Y0U_R_A_GREAT_GU3553R}");
+            } else {
+                alert("猜错了(;ﾟдﾟ)，再试一次吧");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Level1 POWER of F12</h1>
+    <p>请你输入一个0-100间的数字，如果猜中了我想的那个数，我就会给你下一关的Flag ( ^ω^)</p>
+    <input type="text" id="keyInput">
+    <button onclick="checkKey()">Guess</button>
+</body>
+</html>
+
+  </div>
+</article>
 
     </div>
     
