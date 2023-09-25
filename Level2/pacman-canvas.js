@@ -21,7 +21,7 @@ const GHOSTS = {
 }
 
 // global constants
-const FINAL_LEVEL = 10;
+const FINAL_LEVEL = 100;
 const PILL_POINTS = 10;
 const POWERPILL_POINTS = 50;
 const GHOST_POINTS = 100;
@@ -416,7 +416,6 @@ function geronimo() {
 			else{
 				this.pauseAndShowMessage("Game Over, No Key For You", "Total Score: " + this.score.score + (HIGHSCORE_ENABLED ? inputHTML : ''));
 			}
-			// this.pauseAndShowMessage("Game over , the k3Y for next g@me is: H@ppy*G@ME", "Total Score: " + this.score.score + (HIGHSCORE_ENABLED ? inputHTML : ''));
 			$('#playerName').focus();
 		}
 
